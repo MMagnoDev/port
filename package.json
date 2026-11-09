@@ -1,0 +1,34 @@
+{
+  "name": "grid-audit-tools",
+  "private": true,
+  "type": "module",
+  "description": "Ferramentas de auditoria e extração de assets do GRID (Framer) com Playwright",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "setup": "playwright install chromium",
+    "capture": "node capture.mjs",
+    "capture:quick": "node capture.mjs --quick",
+    "summarize": "node summarize.mjs",
+    "assets": "node download-assets.mjs --from-capture",
+    "selftest": "node selftest/run.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
+    "playwright": "^1.51.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.7"
+  },
+  "dependencies": {
+    "framer-motion": "^14.10.1",
+    "lenis": "^1.3.27",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

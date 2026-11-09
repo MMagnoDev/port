@@ -1,0 +1,285 @@
+{
+ "cdn": "https://framerusercontent.com/images",
+ "note": "Largura/altura vêm dos parâmetros das URLs do site; o download traz o arquivo original sem query e compara as dimensões reais.",
+ "items": [
+  {
+   "category": "home",
+   "file": "hero__YW8HSxOagJ9n2ox0OjdrR3EBp8.png",
+   "id": "YW8HSxOagJ9n2ox0OjdrR3EBp8",
+   "ext": "png",
+   "width": 1808,
+   "height": 2400,
+   "role": "Home › Hero (fundo vermelho)"
+  },
+  {
+   "category": "home",
+   "file": "review-jane-janet__scfybtmOehXLT8XdPRjFd7M.png",
+   "id": "scfybtmOehXLT8XdPRjFd7M",
+   "ext": "png",
+   "width": 1280,
+   "height": 1699,
+   "role": "Home › Reviews (retrato)"
+  },
+  {
+   "category": "home",
+   "file": "designer-avatar__uNMWjq9rMQXg01hjnRX0T6EoV8.png",
+   "id": "uNMWjq9rMQXg01hjnRX0T6EoV8",
+   "ext": "png",
+   "width": 1080,
+   "height": 1080,
+   "role": "Footer › avatar do autor"
+  },
+  {
+   "category": "home",
+   "file": "og-image__OsE5QdUMfpNXi1SCH70SPHvFc4.png",
+   "id": "OsE5QdUMfpNXi1SCH70SPHvFc4",
+   "ext": "png",
+   "width": null,
+   "height": null,
+   "role": "og:image global"
+  },
+  {
+   "category": "studio",
+   "file": "about-portrait__4hsBNFGSbvNOMV3kSyJST82O8.png",
+   "id": "4hsBNFGSbvNOMV3kSyJST82O8",
+   "ext": "png",
+   "width": 900,
+   "height": 1200,
+   "role": "Home › About (retrato P&B)"
+  },
+  {
+   "category": "studio",
+   "file": "group-team__NNSUobq8lPFNxj8uNsBHBLm7Ijw.png",
+   "id": "NNSUobq8lPFNxj8uNsBHBLm7Ijw",
+   "ext": "png",
+   "width": 1200,
+   "height": 840,
+   "role": "About › foto da equipe"
+  },
+  {
+   "category": "studio",
+   "file": "team-sodiki-podolski__uIqeedrkCSH1iICvTDthpX5fyo.png",
+   "id": "uIqeedrkCSH1iICvTDthpX5fyo",
+   "ext": "png",
+   "width": 900,
+   "height": 1200,
+   "role": "About › Sodiki Podolski"
+  },
+  {
+   "category": "studio",
+   "file": "team-baliki-cole__Di5KDyNsx3GqWUDomLgsRhwUhxI.png",
+   "id": "Di5KDyNsx3GqWUDomLgsRhwUhxI",
+   "ext": "png",
+   "width": 900,
+   "height": 1200,
+   "role": "About › Baliki Cole"
+  },
+  {
+   "category": "studio",
+   "file": "team-toheebu-will__t1bDp0TCUgX43tjqOir5r0eaL0.png",
+   "id": "t1bDp0TCUgX43tjqOir5r0eaL0",
+   "ext": "png",
+   "width": 900,
+   "height": 1200,
+   "role": "About › Toheebu Will"
+  },
+  {
+   "category": "studio",
+   "file": "team-blesso-smith__Bv2gNJRPzaPzVKQCWLJz1KpmO8.png",
+   "id": "Bv2gNJRPzaPzVKQCWLJz1KpmO8",
+   "ext": "png",
+   "width": 900,
+   "height": 1200,
+   "role": "About › Blesso Smith"
+  },
+  {
+   "category": "projects",
+   "file": "nova-grid-main__Af6atAB1qceum72Z7qB4TePemvI.png",
+   "id": "Af6atAB1qceum72Z7qB4TePemvI",
+   "ext": "png",
+   "width": 1640,
+   "height": 1640,
+   "role": "Nova Grid › imagem principal"
+  },
+  {
+   "category": "projects",
+   "file": "lumo-wellness-main__VJJvcBr3MM7hKxVWrcl5CUdDC8.png",
+   "id": "VJJvcBr3MM7hKxVWrcl5CUdDC8",
+   "ext": "png",
+   "width": 1640,
+   "height": 1640,
+   "role": "Lumo Well › imagem principal"
+  },
+  {
+   "category": "projects",
+   "file": "viron-main__w0hRvEU68fiTIlmwtk7K9SoPh1Q.png",
+   "id": "w0hRvEU68fiTIlmwtk7K9SoPh1Q",
+   "ext": "png",
+   "width": 1640,
+   "height": 1640,
+   "role": "Viron Labs › imagem principal"
+  },
+  {
+   "category": "projects",
+   "file": "kora-co-main__jpGS3v2jePVXTBtGgmibBeNWY.png",
+   "id": "jpGS3v2jePVXTBtGgmibBeNWY",
+   "ext": "png",
+   "width": 1640,
+   "height": 1640,
+   "role": "Kora & Co › imagem principal"
+  },
+  {
+   "category": "projects",
+   "file": "gallery-a__hGUB4bwROyNRGhLqlovAxryiI.png",
+   "id": "hGUB4bwROyNRGhLqlovAxryiI",
+   "ext": "png",
+   "width": 876,
+   "height": 1200,
+   "role": "Galeria (pool) A"
+  },
+  {
+   "category": "projects",
+   "file": "gallery-b__GseMenoRjwfTQZCvi7DNWP0ZFgw.png",
+   "id": "GseMenoRjwfTQZCvi7DNWP0ZFgw",
+   "ext": "png",
+   "width": 898,
+   "height": 1200,
+   "role": "Galeria (pool) B"
+  },
+  {
+   "category": "projects",
+   "file": "gallery-c__mXiGtQIBIW4TJ0Z6WkjdEq4Og.png",
+   "id": "mXiGtQIBIW4TJ0Z6WkjdEq4Og",
+   "ext": "png",
+   "width": 876,
+   "height": 1200,
+   "role": "Galeria (pool) C"
+  },
+  {
+   "category": "projects",
+   "file": "gallery-d__jsbK3eyAUJrgMaJBoXFTRy5yFc.png",
+   "id": "jsbK3eyAUJrgMaJBoXFTRy5yFc",
+   "ext": "png",
+   "width": 876,
+   "height": 1200,
+   "role": "Galeria (pool) D"
+  },
+  {
+   "category": "projects",
+   "file": "gallery-e__PG3weNsbriAp37CQp98sxKg5lU4.png",
+   "id": "PG3weNsbriAp37CQp98sxKg5lU4",
+   "ext": "png",
+   "width": 876,
+   "height": 1200,
+   "role": "Galeria (pool) E"
+  },
+  {
+   "category": "process",
+   "file": "01-discovery__W3i4rr08W4yS2rB2GJ4YAlSGw.png",
+   "id": "W3i4rr08W4yS2rB2GJ4YAlSGw",
+   "ext": "png",
+   "width": 1280,
+   "height": 1699,
+   "role": "Process 01 Discovery"
+  },
+  {
+   "category": "process",
+   "file": "02-strategy__Y5TM2FuQsmk4zgwW18RCeg47QXo.png",
+   "id": "Y5TM2FuQsmk4zgwW18RCeg47QXo",
+   "ext": "png",
+   "width": 1280,
+   "height": 1699,
+   "role": "Process 02 Strategy"
+  },
+  {
+   "category": "process",
+   "file": "03-design__IA6xgWlZJIOJtN0e5GOl7fNoGDA.png",
+   "id": "IA6xgWlZJIOJtN0e5GOl7fNoGDA",
+   "ext": "png",
+   "width": 1280,
+   "height": 1699,
+   "role": "Process 03 Design"
+  },
+  {
+   "category": "process",
+   "file": "04-delivery__7j65JcqYI4j5TpXipMn5fRNg4Ns.png",
+   "id": "7j65JcqYI4j5TpXipMn5fRNg4Ns",
+   "ext": "png",
+   "width": 1280,
+   "height": 1699,
+   "role": "Process 04 Delivery"
+  },
+  {
+   "category": "brands",
+   "file": "logo-1__nLCHAaDNV3gUEopzzUw5gPNHg.png",
+   "id": "nLCHAaDNV3gUEopzzUw5gPNHg",
+   "ext": "png",
+   "width": 250,
+   "height": 56,
+   "role": "Brands › logo 1"
+  },
+  {
+   "category": "brands",
+   "file": "logo-2__qWiEuoiNYuoZtDjQNqI7bpq0nFY.png",
+   "id": "qWiEuoiNYuoZtDjQNqI7bpq0nFY",
+   "ext": "png",
+   "width": 228,
+   "height": 54,
+   "role": "Brands › logo 2"
+  },
+  {
+   "category": "brands",
+   "file": "logo-3__8AEd1sF232xdskvyAeGOoZ5vc.png",
+   "id": "8AEd1sF232xdskvyAeGOoZ5vc",
+   "ext": "png",
+   "width": 200,
+   "height": 80,
+   "role": "Brands › logo 3"
+  },
+  {
+   "category": "brands",
+   "file": "logo-4__0KpRZ9dBtIzz6d1xOA0nCeEWc0I.png",
+   "id": "0KpRZ9dBtIzz6d1xOA0nCeEWc0I",
+   "ext": "png",
+   "width": 238,
+   "height": 60,
+   "role": "Brands › logo 4"
+  },
+  {
+   "category": "brands",
+   "file": "logo-5-6__noHfjhJgknBOCWnO241ISWB3ctE.png",
+   "id": "noHfjhJgknBOCWnO241ISWB3ctE",
+   "ext": "png",
+   "width": 200,
+   "height": 102,
+   "role": "Brands › logos 5 e 6 (mesmo arquivo)"
+  },
+  {
+   "category": "contact",
+   "file": "cta-portrait__DkyFLmBYvs0vQpa51WP8ZjGf67c.png",
+   "id": "DkyFLmBYvs0vQpa51WP8ZjGf67c",
+   "ext": "png",
+   "width": 1920,
+   "height": 2549,
+   "role": "Contact CTA (retrato desfocado)"
+  },
+  {
+   "category": "contact",
+   "file": "office-1__UNQCwOaTsglPv8wWE6z1X1ee9o.jpg",
+   "id": "UNQCwOaTsglPv8wWE6z1X1ee9o",
+   "ext": "jpg",
+   "width": 3634,
+   "height": 5451,
+   "role": "Contact › escritório 1"
+  },
+  {
+   "category": "contact",
+   "file": "office-2__TDrwTxp0gB6mb5dpa7DRbp8y3zk.jpg",
+   "id": "TDrwTxp0gB6mb5dpa7DRbp8y3zk",
+   "ext": "jpg",
+   "width": 2092,
+   "height": 2789,
+   "role": "Contact › escritório 2"
+  }
+ ]
+}
