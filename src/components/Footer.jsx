@@ -44,6 +44,9 @@ export default function Footer({ onNavigate }) {
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8 pb-16 lg:pb-24 border-b border-black/10">
           {/* Contact Details */}
           <div className="flex flex-col space-y-3">
+            <span className="text-sm font-bold uppercase tracking-wider text-[#6f6f6f]">
+              Vamos conversar?
+            </span>
             <a
               href={`mailto:${siteData.meta.email}`}
               className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-[-0.03em] hover:text-[#6f6f6f] transition-colors"
@@ -60,10 +63,10 @@ export default function Footer({ onNavigate }) {
 
           {/* Links Columns */}
           <div className="flex gap-16 sm:gap-24">
-            {/* /Social */}
+            {/* /Redes Sociais */}
             <div className="flex flex-col space-y-4">
               <span className="text-[16px] font-semibold text-[#0f0e0e] tracking-tight">
-                /Social
+                /Redes
               </span>
               <ul className="flex flex-col space-y-2.5">
                 {siteData.meta.socials.map((s) => (
@@ -81,18 +84,18 @@ export default function Footer({ onNavigate }) {
               </ul>
             </div>
 
-            {/* /Nav */}
+            {/* /Navegação */}
             <div className="flex flex-col space-y-4">
               <span className="text-[16px] font-semibold text-[#0f0e0e] tracking-tight">
-                /Nav
+                /Navegação
               </span>
               <ul className="flex flex-col space-y-2.5">
                 {[
-                  { name: 'Home', path: '/' },
-                  { name: 'Work', path: '/project' },
-                  { name: 'Studio', path: '/about' },
-                  { name: 'Services', path: '/#services' },
-                  { name: 'Contact', path: '/contact' },
+                  { name: 'Início', path: '/' },
+                  { name: 'Projetos', path: '/project' },
+                  { name: 'Sobre', path: '/about' },
+                  { name: 'Serviços', path: '/#services' },
+                  { name: 'Contato', path: '/contact' },
                 ].map((n) => (
                   <li key={n.name}>
                     <a
@@ -109,43 +112,24 @@ export default function Footer({ onNavigate }) {
           </div>
         </div>
 
-        {/* Huge Wordmark in pure black */}
-        <div className="py-8 sm:py-14 select-none">
-          <Wordmark color="black" />
+        {/* Wordmark in Footer */}
+        <div className="pt-12 sm:pt-16 pb-8">
+          <Wordmark color="black" text="MAGNO" />
         </div>
 
-        {/* Bottom Section */}
-        <div className="pt-8 border-t border-black/10 flex flex-col sm:flex-row items-center justify-between gap-6 text-[15px] sm:text-[16px] font-semibold">
-          {/* Author info */}
-          <div className="flex items-center space-x-3 text-black/70">
-            <span className="text-black/50">Designed by</span>
-            <img
-              src={siteData.meta.authorAvatar}
-              alt={siteData.meta.author}
-              className="w-8 h-8 rounded-full object-cover shadow-sm"
-            />
-            <a
-              href="https://www.framer.com/@akinbinu-akintayo/?tab=templates"
-              target="_blank"
-              rel="noreferrer"
-              className="text-black hover:opacity-75 transition-opacity"
-            >
-              {siteData.meta.author}
-            </a>
-          </div>
-
-          {/* Back to top button */}
+        {/* Bottom Bar: Copyright & Back to Top */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-black/10 text-xs sm:text-sm font-semibold text-[#6f6f6f]">
+          <p>© {new Date().getFullYear()} Magno. Todos os direitos reservados. Criação de Sites & Social Media.</p>
           <button
-            onClick={scrollToTop}
             type="button"
-            className="flex items-center space-x-1.5 text-black hover:opacity-70 transition-opacity cursor-pointer group"
+            onClick={scrollToTop}
+            className="hover:text-black transition-colors flex items-center space-x-1"
           >
-            <span>Back to top</span>
-            <span className="inline-block transition-transform duration-200 group-hover:-translate-y-1">↑</span>
+            <span>Voltar ao topo</span>
+            <span>↑</span>
           </button>
         </div>
       </div>
     </footer>
   );
 }
-

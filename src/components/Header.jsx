@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { siteData } from '../data/siteData';
 
 export default function Header({ currentPath, onNavigate }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,18 +59,18 @@ export default function Header({ currentPath, onNavigate }) {
           <a
             href="/"
             onClick={(e) => handleNav('/', e)}
-            className="text-[26px] sm:text-[30px] font-bold tracking-[-0.04em] text-white hover:opacity-80 transition-opacity"
+            className="text-[24px] sm:text-[28px] font-bold tracking-[-0.03em] text-white hover:opacity-80 transition-opacity"
           >
-            Grid®
+            Magno®
           </a>
 
           {/* Desktop Nav Items */}
           <nav className="hidden md:flex items-center space-x-8 lg:space-x-12 absolute left-1/2 -translate-x-1/2">
             {[
-              { name: 'Work', path: '/project' },
-              { name: 'Studio', path: '/about' },
-              { name: 'Services', path: '/#services' },
-              { name: 'Process', path: '/#process' },
+              { name: 'Projetos', path: '/project' },
+              { name: 'Sobre', path: '/about' },
+              { name: 'Serviços', path: '/#services' },
+              { name: 'Processo', path: '/#process' },
             ].map((item) => (
               <a
                 key={item.name}
@@ -93,17 +94,17 @@ export default function Header({ currentPath, onNavigate }) {
               onClick={(e) => handleNav('/contact', e)}
               className="hidden md:inline-block text-[16px] font-semibold tracking-[-0.02em] text-white/90 hover:text-white transition-colors"
             >
-              Contact
+              Contato
             </a>
 
             {/* Mobile Menu Button */}
             <button
               type="button"
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-[16px] font-semibold tracking-tight text-white px-3 py-1.5 rounded-full border border-white/20 hover:border-white transition-colors"
-              aria-label="Toggle menu"
+              className="md:hidden text-[15px] font-semibold tracking-tight text-white px-3.5 py-1.5 rounded-full border border-white/20 hover:border-white transition-colors"
+              aria-label="Alternar menu"
             >
-              {menuOpen ? 'Close' : 'Menu'}
+              {menuOpen ? 'Fechar' : 'Menu'}
             </button>
           </div>
         </div>
@@ -121,12 +122,12 @@ export default function Header({ currentPath, onNavigate }) {
           >
             <div className="flex flex-col space-y-6">
               {[
-                { name: 'Home', path: '/' },
-                { name: 'Work', path: '/project' },
-                { name: 'Studio', path: '/about' },
-                { name: 'Services', path: '/#services' },
-                { name: 'Process', path: '/#process' },
-                { name: 'Contact', path: '/contact' },
+                { name: 'Início', path: '/' },
+                { name: 'Projetos', path: '/project' },
+                { name: 'Sobre', path: '/about' },
+                { name: 'Serviços', path: '/#services' },
+                { name: 'Processo', path: '/#process' },
+                { name: 'Contato', path: '/contact' },
               ].map((item, index) => (
                 <motion.a
                   key={item.name}
@@ -146,21 +147,20 @@ export default function Header({ currentPath, onNavigate }) {
 
             <div className="pt-8 border-t border-white/10 flex flex-col space-y-4">
               <span className="text-sm text-white/40 uppercase tracking-widest font-semibold">
-                Socials
+                Redes Sociais
               </span>
               <div className="flex flex-wrap gap-4 text-white/70 text-sm">
-                <a href="https://x.com/47thegreat_" target="_blank" rel="noreferrer" className="hover:text-white">
-                  X (Twitter)
-                </a>
-                <a href="https://www.linkedin.com/in/akinbinuakintayo/" target="_blank" rel="noreferrer" className="hover:text-white">
-                  Linkedin
-                </a>
-                <a href="https://www.instagram.com/47thegreat" target="_blank" rel="noreferrer" className="hover:text-white">
-                  Instagram
-                </a>
-                <a href="https://www.behance.net/creative47" target="_blank" rel="noreferrer" className="hover:text-white">
-                  Behance
-                </a>
+                {siteData.meta.socials.map((s) => (
+                  <a
+                    key={s.name}
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    {s.name}
+                  </a>
+                ))}
               </div>
             </div>
           </motion.div>
@@ -169,4 +169,3 @@ export default function Header({ currentPath, onNavigate }) {
     </>
   );
 }
-

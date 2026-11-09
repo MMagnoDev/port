@@ -8,6 +8,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import { siteData } from './data/siteData';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname || '/');
@@ -59,15 +60,16 @@ export default function App() {
   useEffect(() => {
     if (currentPath.startsWith('/project/')) {
       const slug = currentPath.replace('/project/', '');
-      const titles = {
-        'nova-grid': 'Nova Grid - Waheedi',
-        'lumo-wellness': 'Lumo Well - Waheedi',
-        'viron': 'Viron Labs - Waheedi',
-        'kora-co': 'Kora & Co - Waheedi',
-      };
-      document.title = titles[slug] || 'GRID©';
+      const project = siteData.projects.find((p) => p.slug === slug);
+      document.title = project ? `${project.name} — Magno` : 'Projetos — Magno';
+    } else if (currentPath === '/project') {
+      document.title = 'Projetos — Magno';
+    } else if (currentPath === '/about') {
+      document.title = 'Sobre — Magno';
+    } else if (currentPath === '/contact') {
+      document.title = 'Contato — Magno';
     } else {
-      document.title = 'GRID©';
+      document.title = 'Magno — Criação de Sites & Social Media';
     }
   }, [currentPath]);
 

@@ -28,7 +28,7 @@ export default function ContactPage() {
         {/* Main Heading */}
         <div className="pb-16 sm:pb-24 border-b border-white/20">
           <BlurRevealHeading
-            text="Let’s create something extraordinary together"
+            text="Vamos criar algo extraordinário juntos"
             className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] leading-[1.1] max-w-5xl"
           />
         </div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
           {/* Left Column: Form */}
           <div className="lg:col-span-7 flex flex-col space-y-8">
             <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-wider text-white">
-              GET IN TOUCH
+              ENTRE EM CONTATO
             </h2>
 
             {submitted ? (
@@ -47,10 +47,10 @@ export default function ContactPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="p-8 sm:p-12 rounded-[24px] bg-white/5 border border-white/10 text-center flex flex-col items-center justify-center space-y-4"
               >
-                <span className="text-4xl">✓</span>
-                <h3 className="text-2xl sm:text-3xl font-bold">Message Sent</h3>
+                <span className="text-4xl text-emerald-400">✓</span>
+                <h3 className="text-2xl sm:text-3xl font-bold">Mensagem Enviada!</h3>
                 <p className="text-white/70 max-w-md">
-                  Thank you for reaching out. We will review your inquiry and get back to you shortly.
+                  Obrigado por entrar em contato. Vou avaliar sua solicitação e responder o mais rápido possível.
                 </p>
                 <button
                   type="button"
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   }}
                   className="mt-4 px-6 py-2.5 bg-white text-black font-bold rounded-full text-sm hover:bg-white/80 transition-colors"
                 >
-                  Send another message
+                  Enviar outra mensagem
                 </button>
               </motion.div>
             ) : (
@@ -69,12 +69,12 @@ export default function ContactPage() {
                   {/* First Name */}
                   <div className="flex flex-col space-y-2">
                     <label className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/70">
-                      FIRST NAME
+                      NOME
                     </label>
                     <input
                       type="text"
                       required
-                      placeholder="podolski"
+                      placeholder="Seu nome"
                       value={formData.firstName}
                       onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                       className="w-full px-4 py-3 rounded-[6px] bg-white/5 border border-white/15 text-white placeholder-white/30 focus:outline-none focus:border-white transition-colors text-base"
@@ -84,12 +84,12 @@ export default function ContactPage() {
                   {/* Last Name */}
                   <div className="flex flex-col space-y-2">
                     <label className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/70">
-                      LAST NAME
+                      SOBRENOME
                     </label>
                     <input
                       type="text"
                       required
-                      placeholder="makanaki"
+                      placeholder="Seu sobrenome"
                       value={formData.lastName}
                       onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                       className="w-full px-4 py-3 rounded-[6px] bg-white/5 border border-white/15 text-white placeholder-white/30 focus:outline-none focus:border-white transition-colors text-base"
@@ -100,12 +100,12 @@ export default function ContactPage() {
                 {/* Email */}
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/70">
-                    EMAIL
+                    E-MAIL
                   </label>
                   <input
                     type="email"
                     required
-                    placeholder="podolski@gmail.com"
+                    placeholder="seuemail@exemplo.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 rounded-[6px] bg-white/5 border border-white/15 text-white placeholder-white/30 focus:outline-none focus:border-white transition-colors text-base"
@@ -115,12 +115,12 @@ export default function ContactPage() {
                 {/* Message */}
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/70">
-                    MESSAGE
+                    MENSAGEM
                   </label>
                   <textarea
                     rows={5}
                     required
-                    placeholder="Enter your message..."
+                    placeholder="Conte sobre sua necessidade: criação de site, landing page, gestão de redes sociais..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-3 rounded-[6px] bg-white/5 border border-white/15 text-white placeholder-white/30 focus:outline-none focus:border-white transition-colors text-base resize-none"
@@ -131,9 +131,9 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-4 rounded-[4px] bg-white text-black font-bold uppercase tracking-wider text-sm hover:bg-white/90 active:scale-[0.99] transition-all disabled:opacity-50"
+                  className="w-full py-4 rounded-[4px] bg-white text-black font-bold uppercase tracking-wider text-sm hover:bg-white/90 active:scale-[0.99] transition-all disabled:opacity-50 cursor-pointer"
                 >
-                  {loading ? 'Submitting...' : 'SUBMIT'}
+                  {loading ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
                 </button>
               </form>
             )}
@@ -144,26 +144,39 @@ export default function ContactPage() {
             {/* Address */}
             <div className="flex flex-col space-y-3">
               <span className="text-sm font-bold uppercase tracking-widest text-white/50">
-                Address
+                Localização
               </span>
               <p className="text-xl sm:text-2xl font-bold text-white">
-                Maple Avenue
+                São Paulo — SP
               </p>
               <p className="text-lg sm:text-xl font-semibold text-white/70">
-                Manchester M1 4BT, United Kingdom
+                Atendimento online para todo o Brasil e clientes no exterior
               </p>
             </div>
 
             {/* Inquiries */}
             <div className="flex flex-col space-y-3">
               <span className="text-sm font-bold uppercase tracking-widest text-white/50">
-                Inquiries
+                E-mail direto
               </span>
               <a
                 href={`mailto:${siteData.meta.email}`}
                 className="text-xl sm:text-2xl font-bold text-white hover:text-white/70 transition-colors"
               >
                 {siteData.meta.email}
+              </a>
+            </div>
+
+            {/* Phone / WhatsApp */}
+            <div className="flex flex-col space-y-3">
+              <span className="text-sm font-bold uppercase tracking-widest text-white/50">
+                WhatsApp / Telefone
+              </span>
+              <a
+                href={`tel:${siteData.meta.phone.replace(/[^0-9+]/g, '')}`}
+                className="text-xl sm:text-2xl font-bold text-white hover:text-white/70 transition-colors"
+              >
+                {siteData.meta.phone}
               </a>
             </div>
           </div>
@@ -204,4 +217,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

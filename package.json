@@ -1,8 +1,9 @@
 {
-  "name": "grid-audit-tools",
+  "name": "grid-agency",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Ferramentas de auditoria e extração de assets do GRID (Framer) com Playwright",
+  "description": "GRID Agency portfolio - High-fidelity React clone with sticky stacking sections and Lenis smooth scroll",
   "engines": {
     "node": ">=20"
   },

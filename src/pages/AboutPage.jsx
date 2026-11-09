@@ -12,16 +12,16 @@ export default function AboutPage({ onNavigate }) {
         {/* Main Studio Introduction Statement */}
         <div className="pb-16 sm:pb-24 border-b border-white/20">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[1.1] max-w-6xl text-white">
-            Waheedi is an independent studio based in Oke Mapo, dedicated to crafting thoughtful, visually striking work across design, storytelling, illustration and digital experiences.
+            Magno — Especialista em Criação de Sites e Estratégia de Social Media focado em impulsionar marcas no ambiente digital.
           </h1>
 
           {/* Two Story Paragraphs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 pt-12 sm:pt-16 max-w-5xl">
             <p className="text-lg sm:text-xl font-semibold text-white/70 leading-relaxed">
-              At its core, Waheedi is driven by curiosity—exploring ideas, shaping narratives, and building work that resonates. Each project is approached with intention, balancing simplicity and depth to create outcomes that feel both refined and authentic.
+              Minha missão é ajudar empresas e empreendedores a construírem uma presença digital sólida e profissional. Acredito que um site rápido e bonito somado a redes sociais com conteúdo consistente e bem produzido são os maiores aceleradores de vendas para qualquer negócio hoje.
             </p>
             <p className="text-lg sm:text-xl font-semibold text-white/70 leading-relaxed">
-              Whether collaborating with brands, individuals, or communities, the studio values clarity, originality, and meaningful connection in everything it creates.
+              Seja desenvolvendo uma landing page focada em conversão, criando um site corporativo completo ou gerenciando perfis de redes sociais com postagens atrativas e estratégicas, priorizo clareza, pontualidade e resultados concretos em cada entrega.
             </p>
           </div>
         </div>
@@ -29,10 +29,10 @@ export default function AboutPage({ onNavigate }) {
         {/* 4 Stats Numbers Row */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 py-16 sm:py-24 border-b border-white/20">
           {[
-            { value: '47+', label: 'Projects' },
-            { value: '12+', label: 'Awards' },
-            { value: '98%', label: 'Clients' },
-            { value: '10+', label: 'Experience' },
+            { value: '50+', label: 'Projetos Entregues' },
+            { value: '99%', label: 'Satisfação dos Clientes' },
+            { value: '100k+', label: 'Alcance Digital' },
+            { value: '5+', label: 'Anos de Mercado' },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -63,7 +63,7 @@ export default function AboutPage({ onNavigate }) {
         >
           <img
             src="/assets/images/studio/group-team__NNSUobq8lPFNxj8uNsBHBLm7Ijw.png"
-            alt="Waheedi Studio Group Team"
+            alt="Ambiente de Criação e Projetos"
             className="w-full h-auto max-h-[850px] object-cover object-center"
           />
         </motion.div>
@@ -71,7 +71,7 @@ export default function AboutPage({ onNavigate }) {
         {/* Philosophy Statement */}
         <div className="py-16 sm:py-24 border-b border-white/20">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-[-0.04em] leading-tight max-w-5xl text-white/95">
-            Rooted in a deep appreciation for culture and detail, the studio blends contemporary aesthetics with purposeful creativity.
+            Unindo design funcional, tecnologia ágil e conteúdo estratégico para posicionar sua marca no centro das atenções.
           </h2>
         </div>
 
@@ -79,7 +79,7 @@ export default function AboutPage({ onNavigate }) {
         <div className="py-20 border-b border-white/20">
           <div className="flex items-baseline justify-between pb-8">
             <span className="text-sm sm:text-base font-semibold text-white/50 uppercase tracking-widest">
-              (Clients)
+              (Clientes & Marcas)
             </span>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -102,7 +102,7 @@ export default function AboutPage({ onNavigate }) {
         <div className="py-20 border-b border-white/20">
           <div className="flex items-baseline justify-between pb-8">
             <span className="text-sm sm:text-base font-semibold text-white/50 uppercase tracking-widest">
-              (Services)
+              (Serviços Especializados)
             </span>
           </div>
 
@@ -127,7 +127,7 @@ export default function AboutPage({ onNavigate }) {
         <div className="py-20 border-b border-white/20">
           <div className="flex items-baseline justify-between pb-8">
             <span className="text-sm sm:text-base font-semibold text-white/50 uppercase tracking-widest">
-              (Awards)
+              (Reconhecimentos)
             </span>
           </div>
 
@@ -152,7 +152,7 @@ export default function AboutPage({ onNavigate }) {
         <div className="py-20 border-b border-white/20">
           <div className="pb-12">
             <BlurRevealHeading
-              text="Partners"
+              text="Parceiros"
               className="text-4xl sm:text-6xl font-bold tracking-[-0.04em]"
             />
           </div>
@@ -192,4 +192,3 @@ export default function AboutPage({ onNavigate }) {
     </div>
   );
 }
-

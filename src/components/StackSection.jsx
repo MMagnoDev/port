@@ -6,9 +6,10 @@ export default function StackSection({
   className = '',
   id,
   isHero = false,
-  shadow = true,
+  shadow = false,
   borderTop = true,
-  rounded = true,
+  rounded = false,
+  hasMargin = true,
 }) {
   const sectionRef = useRef(null);
   const [stickyTop, setStickyTop] = useState(0);
@@ -67,11 +68,15 @@ export default function StackSection({
         position: 'sticky',
         top: `${stickyTop}px`,
         zIndex,
-        boxShadow: shadow ? '0 -30px 70px rgba(0, 0, 0, 0.95)' : 'none',
-        borderTop: borderTop ? '1px solid rgba(255, 255, 255, 0.15)' : 'none',
+        boxShadow: shadow ? '0 -10px 30px rgba(0, 0, 0, 0.4)' : 'none',
+        borderTop: borderTop ? '1px solid rgba(255, 255, 255, 0.12)' : 'none',
         borderRadius: rounded ? '36px 36px 0 0' : '0',
       }}
-      className={`w-full bg-[#000000] will-change-transform ${className}`}
+      className={`${
+        hasMargin
+          ? 'w-[calc(100%-1.25rem)] sm:w-[calc(100%-2.5rem)] lg:w-[calc(100%-3.5rem)] mx-auto'
+          : 'w-full'
+      } bg-[#000000] will-change-transform ${className}`}
     >
       {children}
     </section>

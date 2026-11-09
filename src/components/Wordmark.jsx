@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Wordmark({ color = 'white', className = '' }) {
+export default function Wordmark({ color = 'white', className = '', text = 'MAGNO' }) {
   const isWhite = color === 'white';
 
   return (
@@ -10,12 +10,11 @@ export default function Wordmark({ color = 'white', className = '' }) {
           isWhite ? 'text-white' : 'text-black'
         }`}
         style={{
-          fontSize: 'clamp(4.5rem, 19.5vw, 24rem)',
+          fontSize: 'clamp(3.8rem, 18vw, 22rem)',
         }}
       >
-        GRID©
+        {text}
       </div>
     </div>
   );
 }
-

@@ -20,27 +20,31 @@ export default function ContactCTA({ onNavigate }) {
         >
           {/* Background Image with glow / warm red overlay */}
           <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 scale-105 hover:scale-100"
+            className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('/assets/images/contact/cta-portrait__DkyFLmBYvs0vQpa51WP8ZjGf67c.png')",
-              filter: 'brightness(0.9) contrast(1.1)',
+              filter: 'brightness(0.85) contrast(1.1)',
             }}
           />
           {/* Subtle gradient vignette to boost readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50" />
 
           {/* Content */}
           <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center space-y-8 sm:space-y-10">
             <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] text-white leading-[1.05] drop-shadow-md">
-              Let's build something<br />great together
+              Vamos construir algo<br />incrível juntos
             </h2>
+
+            <p className="text-lg sm:text-xl text-white/80 max-w-xl font-medium">
+              Transforme a presença digital da sua marca com um site moderno e redes sociais de alto engajamento.
+            </p>
 
             <a
               href="/contact"
               onClick={handleContact}
               className="px-8 sm:px-10 py-3.5 sm:py-4 bg-white text-black text-base sm:text-lg font-bold rounded-full hover:bg-white/90 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
             >
-              Contact
+              Fale Comigo
             </a>
           </div>
         </motion.div>
@@ -48,4 +52,3 @@ export default function ContactCTA({ onNavigate }) {
     </section>
   );
 }
-
